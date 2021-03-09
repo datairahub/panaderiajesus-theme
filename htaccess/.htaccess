@@ -1,0 +1,65 @@
+SetEnv PHP_VER 5_3
+SetEnv REGISTER_GLOBALS 0
+
+# RewriteEngine On
+
+# General redirects
+Redirect 301 /noticias/ https://tienda.panaderiajesus.com/actualidad/
+Redirect 301 /productos-de-panaderia/ https://tienda.panaderiajesus.com/
+
+# Shop categories redirects
+Redirect 301 /producto-categoria/panes-secos/ https://tienda.panaderiajesus.com/categoria-producto/panes-secos/
+Redirect 301 /producto-categoria/pan-frescos/ https://tienda.panaderiajesus.com/categoria-producto/panes-frescos/
+Redirect 301 /producto-categoria/dulces-caseros/ https://tienda.panaderiajesus.com/categoria-producto/dulces-caseros/
+Redirect 301 /producto-categoria/vegano/ https://tienda.panaderiajesus.com/categoria-producto/100-vegano/
+
+# Shop products redirects
+Redirect 301 /tienda/tostadas-de-pasas-y-nueces/ https://tienda.panaderiajesus.com/producto/tostadas-de-pasas-y-nueces-135g/
+Redirect 301 /tienda/tostadas-de-cacao/ https://tienda.panaderiajesus.com/producto/tostadas-de-cacao-135g/
+Redirect 301 /tienda/rollos-anis/ https://tienda.panaderiajesus.com/producto/rollos-de-anis/
+Redirect 301 /tienda/mantecado-manchego/ https://tienda.panaderiajesus.com/producto/mantecado-manchego/
+Redirect 301 /tienda/rollos-de-vino/ https://tienda.panaderiajesus.com/producto/rollos-de-vino/
+Redirect 301 /tienda/rollos-de-vino-integrales/ https://tienda.panaderiajesus.com/producto/rollos-de-vino-integrales/
+Redirect 301 /tienda/mantecado-almendra/ https://tienda.panaderiajesus.com/producto/mantecado-de-almendra/
+Redirect 301 /tienda/galleta-casera/ https://tienda.panaderiajesus.com/producto/galleta-casera/
+Redirect 301 /tienda/galleta-casera-integral/ https://tienda.panaderiajesus.com/producto/galleta-casera-integral/
+Redirect 301 /tienda/burger-clasica/ https://tienda.panaderiajesus.com/producto/burger-clasica-caja-20-ud/
+Redirect 301 /mini-burger-clasica-caja-100-ud/ https://tienda.panaderiajesus.com/producto/mini-burger-clasica-caja-100-ud/
+Redirect 301 /tienda/burger-de-colores-caja-20-ud/ https://tienda.panaderiajesus.com/producto/burger-de-colores-caja-20-ud/
+Redirect 301 /tienda/mini-burger-de-colores-caja-100-ud/ https://tienda.panaderiajesus.com/producto/burger-de-colores-caja-20-ud/
+Redirect 301 /tienda/mini-burger-clasica-caja-100-ud/ https://tienda.panaderiajesus.com/producto/mini-burger-clasica-caja-100-ud/
+Redirect 301 /tienda/mollete-hamburguesa-caja-20-ud/ https://tienda.panaderiajesus.com/producto/mollete-burger-caja-20-ud/
+Redirect 301 /tienda/crujientes-de-algas/ https://tienda.panaderiajesus.com/producto/crujientes-de-algas-110g/
+Redirect 301 /tienda/crujientes-de-ajo-negro/ https://tienda.panaderiajesus.com/producto/crujientes-de-ajo-negro-de-las-pedroneras-110g/
+Redirect 301 /tienda/crujientes-de-azafran-de-la-mancha/ https://tienda.panaderiajesus.com/producto/crujientes-de-azafran-de-la-mancha-110g/
+Redirect 301 /tienda/crujientes-de-anchoas/ https://tienda.panaderiajesus.com/producto/crujientes-de-anchoas-110g/
+Redirect 301 /tienda/crujientes-de-sesamo/ https://tienda.panaderiajesus.com/producto/crujientes-de-sesamo-110g/
+Redirect 301 /tienda/pan-soplao/ https://tienda.panaderiajesus.com/producto/pan-soplao-100g/
+Redirect 301 /tienda/canas-de-pan-feo-135g/ https://tienda.panaderiajesus.com/producto/canas-de-pan-feo-135g/
+Redirect 301 /tienda/canas-de-pan-feo-500g/ https://tienda.panaderiajesus.com/producto/canas-de-pan-feo-500g/
+Redirect 301 /tienda/tostadas-de-frutos-rojos/ https://tienda.panaderiajesus.com/producto/tostadas-de-frutos-rojos-135g/
+Redirect 301 /tienda/tostadas-naturales/ https://tienda.panaderiajesus.com/producto/tostadas-naturales-135g/
+Redirect 301 /tienda/tostadas-xl/ https://tienda.panaderiajesus.com/producto/tostadas-cristal-xl-200g/
+Redirect 301 /tienda/canas-de-pan-feo-100-integral-135g/ https://tienda.panaderiajesus.com/producto/canas-de-pan-feo-100-integral-135g/
+Redirect 301 /tienda/caja-degustacion-edicion-limitada/ https://tienda.panaderiajesus.com/producto/caja-degustacion-edicion-limitada/
+
+# Static pages redirects
+Redirect 301 /contacto/ https://tienda.panaderiajesus.com/contact/
+Redirect 301 /pan-a-medida/ https://tienda.panaderiajesus.com/panes-personalizados/
+
+# Blog redirects
+Redirect 301 /la-panaderia-mas-antigua/ https://tienda.panaderiajesus.com/nuestra-historia-panaderia-jesus-en-la-verdad/
+Redirect 301 /dia-mundial-del-pan-en-la-ventana-con-carles-francino/ https://tienda.panaderiajesus.com/dia-mundial-del-pan-en-la-ventana-carles-francino/
+Redirect 301 /premio-aje-relevo-generacional/ https://tienda.panaderiajesus.com/panaderia-jesus-gana-el-premio-aje-al-relevo-generacional/
+Redirect 301 /panaderia-jesus-en-el-32-congreso-aecoc-de-gran-consumo/ https://tienda.panaderiajesus.com/panaderia-jesus-32-congreso-aecoc-de-gran-consumo/
+Redirect 301 /visita-pedro-antonio-ruiz/ https://tienda.panaderiajesus.com/visita-de-pedro-antonio-ruiz-santos/
+Redirect 301 /empresa-familiar-mucha-tradicion/ https://tienda.panaderiajesus.com/empresa-familiar-con-mucha-tradicion/
+Redirect 301 /panaderia-jesus-presente-en-los-cursos-de-verano-de-la-uclm/ https://tienda.panaderiajesus.com/cursos-de-verano-de-la-uclm/
+Redirect 301 /el-bautizo-de-tristan/ https://tienda.panaderiajesus.com/bautizo-de-tristan/
+Redirect 301 /albacete-en-positivo/ https://tienda.panaderiajesus.com/albacete-en-positivo-de-cope/
+Redirect 301 /apoyando-la-dop-azafran-de-la-mancha/ https://tienda.panaderiajesus.com/apoyando-el-azafran-de-la-mancha/
+Redirect 301 /panaderia-jesus-una-escapada-gastronomica/ https://tienda.panaderiajesus.com/una-escapada-gastronomica/
+Redirect 301 /panaderia-jesus-una-historia-fascinante-para-play-gastro-de-cadena-ser/ https://tienda.panaderiajesus.com/una-historia-fascinante-para-play-gastro/
+Redirect 301 /la-mecedora-en-la-panaderia/ https://tienda.panaderiajesus.com/la-mecedora-la-panaderia/
+Redirect 301 /panaderia-jesus-premiada-en-los-xii-premios-aje-de-albacete/ https://tienda.panaderiajesus.com/xii-premios-aje-de-albacete/
+Redirect 301 /panaderia-jesus-y-sus-canas-de-pan-feo/ https://tienda.panaderiajesus.com/canas-de-pan-feo-en-tvcm/

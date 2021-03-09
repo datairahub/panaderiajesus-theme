@@ -1,0 +1,367 @@
+/*
+ Theme Name:   Storefront Child
+ Theme URI:    https://tienda.panaderiajesus.com/
+ Description:  Storefront Child Theme for panaderiajesus.com
+ Author:       Dataira
+ Author URI:   https://www.dataira.com/
+ Template:     storefront
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  https://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain:  storefront
+ Tags:         e-commerce, two-columns, left-sidebar, right-sidebar, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready, rtl-language-support, footer-widgets, sticky-post, theme-options, editor-style
+*/
+
+
+/* Fonts */
+@font-face {
+  font-family: 'Kreon';
+  src: url('/wp-content/themes/storefront-child/assets_wp/fonts/Kreon/Kreon-Light.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Kreon';
+  src: url('/wp-content/themes/storefront-child/assets_wp/fonts/Kreon/Kreon-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Kreon';
+  src: url('/wp-content/themes/storefront-child/assets_wp/fonts/Kreon/Kreon-Bold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+/* Links */
+a:focus,
+button:focus,
+.button.alt:focus,
+input:focus,
+textarea:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus {
+    outline: none;
+}
+
+
+/* Header */
+.header__logo--img {
+  max-width: 160px !important;
+}
+
+.site-header .site-branding {
+  display: flex;
+  justify-content: space-between;
+}
+/*
+.site-header .site-branding .links {
+  display: none;
+}
+.site-header .site-branding .links a {
+  color: #333333;
+  margin-left: 18px;
+}
+.site-header .site-branding .links a:hover {
+  color: #747474;
+}
+.site-header .site-branding .links .rs910 {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .site-header .site-branding .links {
+    display: block;
+    align-items: end;
+    margin-left: 10px;
+    color: #333;
+    font-family: 'Kreon', sans-serif;
+    align-self: flex-start;
+    margin-top: 10px;
+  }
+}
+@media (min-width: 910px) {
+  .site-header .site-branding .links .rs910 {
+    display: inline-block;
+  }
+}
+@media (min-width: 1200px) {
+  .site-header .site-branding .links a {
+    margin-left: 30px;
+  }
+}
+*/
+
+/* Top menu */
+.main-navigation {
+  font-family: 'Kreon', sans-serif;
+}
+.handheld-navigation {
+    padding-top: 40px;
+}
+/* Hide shop menu on blog archive */
+.blog .storefront-primary-navigation .primary-navigation,
+.blog .storefront-primary-navigation .site-header-cart,
+.single-post .storefront-primary-navigation .primary-navigation,
+.single-post .storefront-primary-navigation .site-header-cart {
+  display: none !important;
+}
+
+/* Secondary menu */
+.secondary-navigation {
+  font-family: 'Kreon', sans-serif;
+}
+.secondary-navigation .menu-item-4005,
+.secondary-navigation .menu-item-4006,
+.secondary-navigation .menu-item-4007,
+.secondary-navigation .menu-item-4008 {
+  display: none !important;
+}
+.secondary-navigation ul.menu a {
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #333;
+}
+@media (min-width: 1128px) {
+  .secondary-navigation .menu-item-4005,
+  .secondary-navigation .menu-item-4006,
+  .secondary-navigation .menu-item-4007,
+  .secondary-navigation .menu-item-4008 {
+    display: inline-block !important;
+  }
+}
+
+/* Woocommerce */
+.woocommerce-tabs {
+  width: 100%;
+}
+.avalibility_map_tab {
+  display: none !important;
+}
+.woocommerce-ordering .orderby {
+  width: 100%;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .woocommerce-result-count {
+    margin-top: 10px;
+  }
+}
+
+/* blog & single post*/
+.blog .storefront-handheld-footer-bar,
+.single-post .storefront-handheld-footer-bar {
+  display: none !important;
+}
+/* Breadcrumbs */
+.storefront-breadcrumb {
+  margin-bottom: 0;
+}
+.storefront-breadcrumb .col-full{
+  display: none !important;
+}
+
+/* Post titles */
+.entry-title {
+  font-family: 'Kreon', sans-serif;
+}
+
+/* Post content */
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+  font-family: 'Kreon', sans-serif;
+}
+
+/* Footer */
+#colophon {
+  padding-bottom: 0 !important;
+  font-family: 'Kreon', sans-serif;
+}
+
+#colophon:after {
+  content: 'Panadería Jesus';
+  background-color: #2e2d2c;
+  padding: 20px 30px;
+  text-align: center;
+  display: block;
+  font-size: 12px;
+}
+
+.site-footer {
+  background-color: #3C3C3B;
+  color: #FFFFFF;
+}
+
+.site-footer a:not(.button):not(.components-button) {
+  color: #FFFFFF;
+}
+
+.site-footer .site-info {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .footer-widgets {
+    padding-top: 3em;
+    border-bottom: none;
+  }
+}
+
+/* Footer menus */
+.site-footer .footer-widgets .menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site-footer .footer-widgets .menu li {
+  padding-left: 0;
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.site-footer .footer-widgets .menu li:before {
+  content: none;
+}
+
+.site-footer .footer-widgets .menu li a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.site-footer .footer-widgets .menu li a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .site-footer .footer-widgets .menu {
+    justify-content: center;
+  }
+  .site-footer .footer-widgets .menu li {
+    flex: 0 0 auto;
+    margin: 6px 12px;
+  }
+  .site-footer .footer-widgets .menu li a {
+    font-size: 18px;
+  }
+}
+
+/* Footer paygates icons */
+.footer-paygates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-paygates li {
+  margin: 6px;
+}
+
+/* Woocommerce shop */
+.woocommerce-products-header {
+  display: none !important; 
+}
+
+.entry-summary .product_meta {
+  display: none !important;
+}
+
+.woocommerce-tabs .reviews_tab {
+  display: none !important;
+}
+
+.up-sells.products h2,
+.related.products h2,
+.woocommerce-loop-product__title,
+.tabs.wc-tabs {
+  font-family: 'Kreon', sans-serif;
+}
+
+/* Page panes personalizados */
+.page-id-3903 h1 {
+  text-align: center;
+  font-weight: 700;
+}
+
+.page-id-3903 .hentry {
+  margin: 0 0 4.235801032em;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Blog archive styles */
+.blog .entry-taxonomy {
+  border: 0;
+  padding-top: 0;
+  margin: 0;
+}
+.blog .entry-taxonomy .cat-links,
+.blog .entry-taxonomy .tags-links {
+  display: none;
+}
+.blog .more-link {
+  display: none;
+}
+.blog .entry-header {
+  margin-bottom: 0;
+  border: 0;
+}
+.blog .entry-title {
+  font-weight: 900;
+  font-size: 28px;
+}
+.blog .entry-title a {
+  color: black;
+}
+.blog .entry-title a:hover {
+  color: #E29C00;
+}
+
+/* Blog archive layout */
+.blog .site-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.blog .site-main article {
+  flex: 1 1 100%;
+}
+.blog .pagination {
+  flex: 1 0 100%;
+}
+
+@media screen and (min-width: 780px) {
+  .blog .site-main article {
+    flex: 0 1 300px;
+    margin-right: 40px;
+  }
+}
+
+/* Single post styles */
+.single-post .site-main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.single-post .site-main .entry-taxonomy {
+  display: none;
+}
+
+.single-post .hentry .entry-header {
+  border-bottom: 0;
+}
+
+.single-post .site-main .navigation .nav-next a,
+.single-post .site-main nav.navigation .nav-previous a {
+  color: #A41B1A;
+}

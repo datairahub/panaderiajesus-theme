@@ -1,0 +1,80 @@
+#WFIPBLOCKS - Do not remove this line. Disable Web Caching in Wordfence to remove this data.
+Order Deny,Allow
+#Do not remove this line. Disable Web Caching in Wordfence to remove this data - WFIPBLOCKS
+#WFCACHECODE - Do not remove this line. Disable Web Caching in Wordfence to remove this data.
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/css text/x-component application/x-javascript application/javascript text/javascript text/x-js text/html text/richtext image/svg+xml text/plain text/xsd text/xsl text/xml image/x-icon application/json
+    <IfModule mod_headers.c>
+        Header append Vary User-Agent env=!dont-vary
+    </IfModule>
+    <IfModule mod_mime.c>
+        AddOutputFilter DEFLATE js css htm html xml
+    </IfModule>
+</IfModule>
+<IfModule mod_mime.c>
+    Redirect 301 /producto-categoria/pan-a-medida/ http://panaderiajesus.com/pan-a-medida/
+    AddType text/html .html_gzip
+    AddEncoding gzip .html_gzip
+    AddType text/xml .xml_gzip
+    AddEncoding gzip .xml_gzip
+</IfModule>
+<IfModule mod_setenvif.c>
+    SetEnvIfNoCase Request_URI \.html_gzip$ no-gzip
+    SetEnvIfNoCase Request_URI \.xml_gzip$ no-gzip
+</IfModule>
+<IfModule mod_headers.c>
+    Header set Vary "Accept-Encoding, Cookie"
+</IfModule>
+<IfModule mod_rewrite.c>
+    #Prevents garbled chars in cached files if there is no default charset.
+    AddDefaultCharset utf-8
+
+    #Cache rules:
+    
+    RewriteCond %{HTTP_COOKIE} !(comment_author|wp\-postpass|wf_logout|wordpress_logged_in|wptouch_switch_toggle|wpmp_switcher) [NC]    
+    RewriteCond %{REQUEST_URI} \/*([^\/]*)\/*([^\/]*)\/*([^\/]*)\/*([^\/]*)\/*([^\/]*)(.*)$
+    RewriteCond "%{DOCUMENT_ROOT}/wp-content/wfcache/%{HTTP_HOST}_%1/%2~%3~%4~%5~%6_wfcache%{ENV:WRDFNC_HTTPS}.html%{ENV:WRDFNC_ENC}" -f
+    RewriteRule \/*([^\/]*)\/*([^\/]*)\/*([^\/]*)\/*([^\/]*)\/*([^\/]*)(.*)$ "/wp-content/wfcache/%{HTTP_HOST}_$1/$2~$3~$4~$5~$6_wfcache%{ENV:WRDFNC_HTTPS}.html%{ENV:WRDFNC_ENC}" [L]
+
+</IfModule>
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://panaderiajesus.com/$1 [R,L]
+
+#Do not remove this line. Disable Web caching in Wordfence to remove this data - WFCACHECODE
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-javascript "access 1 month"
+ExpiresByType application/javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+</IfModule>
+## EXPIRES CACHING ##
+
+# BEGIN WordPress
+# Las directivas (líneas) entre `BEGIN WordPress` y `END WordPress` se generan dinámicamente
+# , y solo se deberían modificar mediante filtros de WordPress.
+# Cualquier cambio en las directivas que hay entre esos marcadores se sobreescribirán.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+
